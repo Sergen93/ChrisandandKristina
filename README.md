@@ -10,7 +10,7 @@ Live at https://chrisandkristina.au
 - Tapping the envelope breaks the wax seal, folds the flap up to show the lining, and lifts a rolled scroll out. The scroll unrolls, the flowers bloom and the names write themselves in.
 - Shows a live countdown to the wedding day.
 - Plays music once the envelope is tapped, with a speaker button to mute it.
-- Has an "Add to calendar" button that adds the date to the guest's calendar.
+- Has an "Add to calendar" button. On Android it opens Google Calendar with the date filled in, on iPhone (Safari) it opens Apple Calendar's add screen, and on other devices it offers a choice of the two.
 - Responds to touch: dragging a finger or moving the mouse leaves a trail of gold sparkles, nudges the petals and tilts the card. Tapping the flowers scatters petals.
 - The envelope button under the scroll closes it again so it can be replayed.
 - Scales to fit any phone, tablet or computer screen.
@@ -21,7 +21,7 @@ Live at https://chrisandkristina.au
 | --- | --- |
 | `index.html` | The whole page: layout, styling, animation, fonts and script in one file. |
 | `music.mp3` | The track that plays when the envelope is opened. Optional: without it, the page plays a built-in piano piece. |
-| `save-the-date.ics` | The calendar entry behind the "Add to calendar" button. |
+| `save-the-date.ics` | The calendar entry used for Apple Calendar and Outlook. Google Calendar uses a link inside `index.html` instead. |
 | `preview.jpg` | The image shown when the link is shared in Messenger or a text. |
 | `CNAME` | Created by GitHub Pages. Holds the custom domain, so don't delete it. |
 
@@ -38,7 +38,7 @@ DNS is managed at VentraIP:
 
 ## Making changes
 
-- **Text, names or date:** edit `index.html`. If the date changes, also update the countdown target (search for `Date.UTC`) and `save-the-date.ics`.
+- **Text, names or date:** edit `index.html`. If the date changes, also update the countdown target (search for `Date.UTC`), `save-the-date.ics` and the Google Calendar link (search for `calendar.google.com`).
 - **Music:** replace `music.mp3` with another file of the same name. Keep it to a few megabytes so it loads quickly on mobile data.
 - **Link preview image:** replace `preview.jpg` with another image of the same name, 1200 × 630 pixels.
 
